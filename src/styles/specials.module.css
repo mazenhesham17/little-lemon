@@ -1,0 +1,43 @@
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.specials {
+  width: 850px;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+
+.heading1 {
+  font-family: Karla;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.browse_button {
+  height: 60px;
+  width: 200px;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 0;
+  border-radius: 16px;
+}
+
+.specials_section {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=specials.module.css.map */

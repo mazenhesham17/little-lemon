@@ -5,9 +5,9 @@ function Navigation() {
     return (
         <div className={style.section} >
             <div className={style.navigation}>
-                <img src={logo}  width={175} height={60} alt="little lemon logo" />
+                <img src={logo} width={175} height={60} alt="little lemon logo" />
                 <ul className={style.navigation_list}>
-                    <li className={style.list_item} ><a>Home</a></li>
+                    <li className={style.list_item}><a>Home</a></li>
                     <li className={style.list_item}><a>About</a></li>
                     <li className={style.list_item}><a>Menu</a></li>
                     <li className={style.list_item}><a>Reservations</a></li>

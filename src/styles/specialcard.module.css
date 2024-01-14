@@ -1,0 +1,62 @@
+.card {
+  background-color: #EDEFEE;
+  height: 440px;
+  width: 250px;
+  border-radius: 16px;
+  margin: 10px;
+  text-align: center;
+}
+
+.image {
+  border-radius: 16px 16px 0 0px;
+}
+
+.row {
+  margin: 10px 0px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  color: #495E57;
+  font-family: Markazi Text;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.price {
+  color: #495E57;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.text {
+  color: #495E57;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order_button {
+  width: 110px;
+  height: 40px;
+  background-color: #495E57;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 0;
+  border-radius: 16px;
+}/*# sourceMappingURL=specialcard.module.css.map */

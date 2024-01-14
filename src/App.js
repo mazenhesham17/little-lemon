@@ -2,6 +2,8 @@ import './App.css';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navigation from './components/Navigation';
+import Specials from './components/Specials';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
     <Navigation/>
     <main>
     <Hero/>
+    <Specials/>
     </main>
     <Footer/>
     </>
