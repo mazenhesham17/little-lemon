@@ -10,7 +10,7 @@ const Testimonials = () => {
         <div className={style.section}>
             <div className={style.testimonials}>
                 <h1 className={style.heading}>
-                    testimonials
+                    Testimonials
                 </h1>
                 <div className={style.testimonials_section}>
                     <TestimonialsCard img={person1} />

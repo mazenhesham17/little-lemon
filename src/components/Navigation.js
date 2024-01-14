@@ -1,7 +1,7 @@
 import logo from "../assets/Logo .svg"
 import style from '../styles/navigation.module.css'
 
-function Navigation() {
+const Navigation = () => {
     return (
         <div className={style.section} >
             <div className={style.navigation}>

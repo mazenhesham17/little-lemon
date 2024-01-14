@@ -1,7 +1,7 @@
 import logo from "../assets/Asset 9@4x.png"
 import style from "../styles/footer.module.css"
 
-function Footer() {
+const Footer = () => {
     return (
         <div className={style.section} >
             <div className={style.footer}>
