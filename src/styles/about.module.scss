@@ -46,21 +46,21 @@ $primary-color: #495E57;
     max-width: 400px;
 }
 
-.stack{
+.stack {
     position: relative;
     height: 400px;
     width: 300px;
     margin-left: 50px;
 }
 
-.top{
+.top {
     border-radius: 16px;
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
-.bottom{
+.bottom {
     border-radius: 16px;
     position: absolute;
     top: 120px;

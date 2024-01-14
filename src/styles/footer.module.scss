@@ -1,7 +1,7 @@
 $primary-color: #495E57;
 
 .section {
-    padding: 100px 10px;
+    padding: 60px 10px;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@ $primary-color: #495E57;
 .footer {
     width: 850px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .heading1 {

@@ -1,5 +1,5 @@
 .section {
-  padding: 100px 10px;
+  padding: 60px 10px;
   background-color: #495E57;
   display: flex;
   justify-content: center;
@@ -8,7 +8,7 @@
 .footer {
   width: 850px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .heading1 {

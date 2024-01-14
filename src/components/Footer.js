@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className={style.section} >
             <div className={style.footer}>
-                <img src={logo} alt="little lemon cropped logo" height={200} width={200} />
+                <img src={logo} alt="little lemon cropped logo" height={200} width={150} />
                 <div>
                     <h1 className={style.heading1}>Links</h1>
                     <ul className={style.list}>
