@@ -1,0 +1,21 @@
+$primary-color: #495E57;
+
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.reserving{
+    width: 850px;
+    margin: 10px 0px ;
+}
+
+.heading1{
+    margin: 0;
+    color: $primary-color;
+    font-family: Markazi Text;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

@@ -1,8 +1,16 @@
+import style from "../styles/reserving.module.css"
+import ReservingForm from "../components/ReservingForm";
+
 const ReservingPage = () => {
     return (
-        <>
-            <h1> booking table </h1>
-        </>
+        <div className={style.section}>
+            <div className={style.reserving}>
+                <h1 className={style.heading1}>
+                    Reserve a Table
+                </h1>
+                <ReservingForm />
+            </div>
+        </div>
     )
 }
 
