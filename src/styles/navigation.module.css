@@ -1,0 +1,25 @@
+.section {
+  padding: 10px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation_list {
+  list-style-type: none;
+}
+
+.list_item {
+  float: left;
+  margin-left: 28px;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}/*# sourceMappingURL=navigation.module.css.map */

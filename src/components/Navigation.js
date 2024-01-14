@@ -1,19 +1,21 @@
 import logo from "../assets/Logo .svg"
+import style from '../styles/navigation.module.css'
 
-
-function Navigation(){
+function Navigation() {
     return (
-        <>
-        <img src={logo} alt="little lemon logo" />
-        <ul>
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Menu</a></li>
-            <li><a>Reservations</a></li>
-            <li><a>Order online</a></li>
-            <li><a>Login</a></li>
-        </ul>
-        </>
+        <div className={style.section} >
+            <div className={style.navigation}>
+                <img src={logo}  width={175} height={60} alt="little lemon logo" />
+                <ul className={style.navigation_list}>
+                    <li className={style.list_item} ><a>Home</a></li>
+                    <li className={style.list_item}><a>About</a></li>
+                    <li className={style.list_item}><a>Menu</a></li>
+                    <li className={style.list_item}><a>Reservations</a></li>
+                    <li className={style.list_item}><a>Order online</a></li>
+                    <li className={style.list_item}><a>Login</a></li>
+                </ul>
+            </div>
+        </div>
     );
 }
 

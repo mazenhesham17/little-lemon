@@ -5,15 +5,11 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <>
-    <Navigation>
-
-    </Navigation>
+    <Navigation/>
     <main>
 
     </main>
-    <Footer>
-
-    </Footer>
+    <Footer/>
     </>
   );
 }
