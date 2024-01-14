@@ -1,0 +1,39 @@
+$primary-color: #495E57;
+
+.section {
+    padding: 100px 10px;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading1 {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+.list_item {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 10px 0;
+}
