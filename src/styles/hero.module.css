@@ -1,0 +1,60 @@
+.section {
+  background-color: #495E57;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 850px;
+}
+
+.image {
+  border-radius: 16px;
+}
+
+.heading1 {
+  margin: 0;
+  color: #F4CE14;
+  font-family: Roboto;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.heading5 {
+  margin: 0;
+  color: #FFF;
+  font-family: Markazi Text;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 400px;
+}
+
+.button {
+  height: 50px;
+  width: 190px;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 0;
+  border-radius: 16px;
+}/*# sourceMappingURL=hero.module.css.map */
