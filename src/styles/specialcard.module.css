@@ -1,9 +1,8 @@
 .card {
   background-color: #EDEFEE;
-  height: 440px;
+  height: 420px;
   width: 250px;
   border-radius: 16px;
-  margin: 10px;
   text-align: center;
 }
 

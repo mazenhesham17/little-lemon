@@ -1,0 +1,28 @@
+$primary-color: #495E57;
+
+.section {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials {
+    width: 850px;
+
+}
+
+.heading {
+    color: #FFF;
+    font-family: Markazi Text;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.testimonials_section {
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-around;
+}

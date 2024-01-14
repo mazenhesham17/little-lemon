@@ -1,0 +1,36 @@
+$primary-color: #495E57;
+
+.card {
+    height: 220px;
+    width: 170px;
+    background-color: #EDEFEE;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upper {
+    display: flex;
+}
+
+.lower {
+    color: $primary-color;
+    font-family: Karla;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.info {
+    margin-left: 10px;
+    color: #000;
+    font-family: Karla;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
