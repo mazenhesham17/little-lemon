@@ -1,10 +1,14 @@
 $primary-color: #495E57;
 
-.container {}
+.container {
+    max-width: 850px;
+    display: flex;
+    justify-content: space-around;
+}
 
 .card {
     background-color: #EDEFEE;
-    max-width: 350px;
+    width: 340px;
     padding: 15px;
     margin: 10px 0px;
     color: $primary-color;
@@ -25,7 +29,7 @@ $primary-color: #495E57;
     margin: 0;
     color: #8B8B8B;
     font-family: Karla;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -94,6 +98,7 @@ $primary-color: #495E57;
     justify-content: space-around;
 }
 
+
 .button {
     height: 60px;
     width: 210px;
@@ -106,4 +111,7 @@ $primary-color: #495E57;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    align-items: center;
+    display: block;
+    margin: 20px auto;
 }
