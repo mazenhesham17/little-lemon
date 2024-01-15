@@ -5,7 +5,7 @@ export const generateId = () => {
         if (i == 0) {
             ID += Math.floor(Math.random() * 9) + 1;
         } else {
-            ID += Math.floor(Math.random() * 10) ;
+            ID += Math.floor(Math.random() * 10);
         }
     }
     return ID

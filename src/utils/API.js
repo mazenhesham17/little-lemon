@@ -11,6 +11,5 @@ export const fetchAPI = (date) => {
 
 export const submitAPI = (data) => {
     console.log(data);
-    
     return true;
 }

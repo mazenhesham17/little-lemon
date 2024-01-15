@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import ReservingPage from './pages/ReservingPage'
-import { Route, Routes , useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import { useReducer } from 'react';
 import { fetchAPI, submitAPI } from './utils/API';
 import ConfirmationPage from './pages/ConfirmationPage';
@@ -39,7 +39,7 @@ function App() {
               submitForm={submitForm}
               availableTimes={availableTimes}
               setAvailableTimes={setAvailableTimes} />} />
-            <Route path="/confirmation" element={<ConfirmationPage/>}></Route>
+          <Route path="/confirmation" element={<ConfirmationPage />}></Route>
         </Routes>
       </main>
       <Footer />

@@ -149,16 +149,16 @@ const ReservingForm = (props) => {
                     onClick={e => {
                         e.preventDefault();
                         const data = {
-                            "name" : name,
-                            "email" : email,
-                            "phone number" : phone,
-                            "date" : date,
-                            "time" : time,
-                            "dinners" : dinners,
-                            "dinning place" : ( place ? "outdoors" : "indoors"),
-                            "comment" : comment
+                            "name": name,
+                            "email": email,
+                            "phone number": phone,
+                            "date": date,
+                            "time": time,
+                            "dinners": dinners,
+                            "dinning place": (place ? "outdoors" : "indoors"),
+                            "comment": comment
                         }
-                        props.submitForm(data) ;
+                        props.submitForm(data);
                     }} >
                     Reserve a table
                 </button>
