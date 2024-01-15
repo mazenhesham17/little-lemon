@@ -9,6 +9,7 @@ const ReservingPage = (props) => {
                     Reserve a Table
                 </h1>
                 <ReservingForm
+                    submitForm={props.submitForm}
                     availableTimes={props.availableTimes}
                     setAvailableTimes={props.setAvailableTimes} />
             </div>

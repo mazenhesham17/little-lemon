@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "../styles/reservingform.module.css";
 import { convertDate } from "../utils/date.js";
+import { submitAPI } from "../utils/API.js";
 
 
 const ReservingForm = (props) => {
@@ -147,7 +148,17 @@ const ReservingForm = (props) => {
                     className={`${style.button}`}
                     onClick={e => {
                         e.preventDefault();
-                        console.log("Form is submitted");
+                        const data = {
+                            "name" : name,
+                            "email" : email,
+                            "phone number" : phone,
+                            "date" : date,
+                            "time" : time,
+                            "dinners" : dinners,
+                            "dinning place" : ( place ? "outdoors" : "indoors"),
+                            "comment" : comment
+                        }
+                        props.submitForm(data) ;
                     }} >
                     Reserve a table
                 </button>
