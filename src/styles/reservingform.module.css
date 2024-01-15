@@ -1,1 +1,105 @@
-/*# sourceMappingURL=reservingform.module.css.map */
+.card {
+  background-color: #EDEFEE;
+  max-width: 350px;
+  padding: 15px;
+  margin: 10px 0px;
+  color: #495E57;
+  font-family: Karla;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 16px;
+  border: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  margin: 0;
+  color: #8B8B8B;
+  font-family: Karla;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.input {
+  background-color: #fff;
+  border: 0;
+  height: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  color: #495E57;
+  font-family: Karla;
+  font-size: 20px;
+}
+
+.number {
+  max-width: 50px;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.entry_field {
+  resize: none;
+  border: 0;
+  color: #8B8B8B;
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+}
+
+.radio_button {
+  width: 120px;
+  height: 30px;
+  border: 0px;
+  border-radius: 16px;
+  text-align: center;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.active {
+  background-color: #fff;
+  color: #495E57;
+}
+
+.disabled {
+  background-color: #495E57;
+  color: #fff;
+}
+
+.space {
+  margin: 5px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  height: 60px;
+  width: 210px;
+  border: 0;
+  border-radius: 16px;
+  background-color: #495E57;
+  color: #EDEFEE;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}/*# sourceMappingURL=reservingform.module.css.map */
