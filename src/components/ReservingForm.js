@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import style from "../styles/reservingform.module.css";
 import { convertDate } from "../utils/date.js";
-import { submitAPI } from "../utils/API.js";
 
 
 const ReservingForm = (props) => {
@@ -15,9 +14,61 @@ const ReservingForm = (props) => {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [comment, setComment] = useState("");
+    const [errors, setErrors] = useState({
+        "dinners": -1,
+        "occaison": -1,
+        "email": -1,
+    });
+
+    const validateForm = () => {
+        if (dinners < 0) {
+            setErrors((old) => ({
+                ...old,
+                "dinners": "Dinners should be more than one.",
+            }));
+            return false;
+        }
+        if (occasion == "default") {
+            setErrors((old) => ({
+                ...old,
+                "occaison": "Occasion should be choosed.",
+            }));
+            return false;
+        }
+        if (!email.includes("@")) {
+            setErrors((old) => ({
+                ...old,
+                "email": "Email should contain @.",
+            }));
+            return false;
+        }
+        return true;
+    }
+
+    const handleSubmit = () => {
+        const data = {
+            "name": name,
+            "email": email,
+            "phone number": phone,
+            "date": date,
+            "time": time,
+            "dinners": dinners,
+            "dinning place": (place ? "outdoors" : "indoors"),
+            "comment": comment
+        }
+        props.submitForm(data);
+    }
 
     return (
-        <form className={style.container}>
+        <form
+            className={style.container}
+            onSubmit={e => {
+                e.preventDefault();
+                console.log("hell");
+                if (validateForm()) {
+                    handleSubmit();
+                }
+            }}>
             <div>
                 <fieldset className={style.card}>
                     <label htmlFor="dinning date">
@@ -57,7 +108,7 @@ const ReservingForm = (props) => {
                     <label htmlFor="number of dinners">
                         How many dinners
                         <p className={style.text}>
-                            {`${dinners} dinner${dinners == 1 ? "" : "s"}`}
+                            {`${dinners} dinner${dinners === 1 ? "" : "s"}`}
                         </p>
                     </label>
                     <input
@@ -67,6 +118,7 @@ const ReservingForm = (props) => {
                         max={10}
                         value={dinners}
                         onChange={e => setDinners(e.target.value)} />
+                    {errors.dinners != -1 ? <span className={style.error}>{errors.dinners}</span> : ""}
                 </fieldset>
                 <fieldset className={`${style.card} ${style.entry}`}>
                     <label>
@@ -102,6 +154,7 @@ const ReservingForm = (props) => {
                         <option>Birthday</option>
                         <option>Engagement</option>
                     </select>
+                    {errors.occaison != -1 ? <span className={style.error}>{errors.occaison}</span> : ""}
                 </fieldset>
             </div>
             <div>
@@ -112,7 +165,8 @@ const ReservingForm = (props) => {
                     <input type="text"
                         className={style.entry_field}
                         value={name} placeholder="Please enter your name"
-                        onChange={e => setName(e.target.value)} />
+                        onChange={e => setName(e.target.value)}
+                        required />
                 </fieldset>
                 <fieldset className={`${style.card} ${style.entry}`}>
                     <label>
@@ -122,7 +176,10 @@ const ReservingForm = (props) => {
                         type="email"
                         className={style.entry_field}
                         value={email} placeholder="Please enter your email"
-                        onChange={e => setEmail(e.target.value)} />
+                        onChange={e => setEmail(e.target.value)}
+                        required
+                    />
+                    {errors.email != -1 ? <span className={style.error}>{errors.email}</span> : ""}
                 </fieldset>
                 <fieldset className={`${style.card} ${style.entry}`}>
                     <label>
@@ -145,22 +202,9 @@ const ReservingForm = (props) => {
                         onChange={e => setComment(e.target.value)} />
                 </fieldset>
                 <button
-                    className={`${style.button}`}
-                    onClick={e => {
-                        e.preventDefault();
-                        const data = {
-                            "name": name,
-                            "email": email,
-                            "phone number": phone,
-                            "date": date,
-                            "time": time,
-                            "dinners": dinners,
-                            "dinning place": (place ? "outdoors" : "indoors"),
-                            "comment": comment
-                        }
-                        props.submitForm(data);
-                    }} >
-                    Reserve a table
+                    type="submit"
+                    className={`${style.button}`}>
+                    Reserve a Table
                 </button>
             </div>
         </form>

@@ -61,6 +61,7 @@ $primary-color: #495E57;
     border: 0;
     color: #8B8B8B;
     font-family: Karla;
+    border-radius: 6px;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -114,4 +115,11 @@ $primary-color: #495E57;
     align-items: center;
     display: block;
     margin: 20px auto;
+}
+
+.error {
+    font-size: 14px;
+    margin: 5px 0px 0px 0px;
+    font-weight: 100;
+    color: red;
 }
