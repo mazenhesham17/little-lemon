@@ -1,5 +1,7 @@
 # Little Lemon
 
+![Little Lemon Logo](./src/assets/Asset20@4x.png)
+
 ## Table of Contents
 
 - [About](#about)
@@ -17,6 +19,7 @@ This project is the final assessment for "Meta Front-End Developer Capstone," wh
 ## Design
   Try to make the experience smooth for the user, starting by designing wireframes and prototypes using Figma first before any implementation.
   
+  ![Desktop design](./src/assets/screenshot.png)
   You can browse wireframes from this [link]( https://www.figma.com/file/bGD2ZelcEnYK2wkduMm6Zy/Little-Lemon's-Wireframes?type=design&node-id=0%3A1&mode=design&t=basMTCs5m6IxOyyh-1 )
   
   You can browse prototypes from this [link]( https://www.figma.com/file/Hn6z1MqtZlrtxxoxP3os9v/Little-Lemon's-Prototypes?type=design&node-id=0%3A1&mode=design&t=sw7B59AYafiEzlWB-1 )
