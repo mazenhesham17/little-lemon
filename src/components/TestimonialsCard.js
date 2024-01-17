@@ -7,17 +7,34 @@ const TestimonialsCard = (props) => {
     return (
         <div className={style.card}>
             <div className={style.upper}>
-                <img src={props.img} height={80} width={80} alt="profile picture" />
+                <img src={props.img}
+                    className={style.image}
+                    alt="profile picture" />
                 <div className={style.info} >
                     <p>
                         username
                     </p>
                     <div>
-                        <img src={star} height={14} />
-                        <img src={star} height={14} />
-                        <img src={star} height={14} />
-                        <img src={star} height={14} />
-                        <img src={star} height={14} />
+                        <img
+                            src={star}
+                            className={style.star}
+                            alt="star" />
+                        <img
+                            src={star}
+                            className={style.star}
+                            alt="star" />
+                        <img
+                            src={star}
+                            className={style.star}
+                            alt="star" />
+                        <img
+                            src={star}
+                            className={style.star}
+                            alt="star" />
+                        <img
+                            src={star}
+                            className={style.star}
+                            alt="star" />
                     </div>
                 </div>
             </div>

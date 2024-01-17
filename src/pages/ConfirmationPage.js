@@ -7,7 +7,7 @@ const ConfirmationPage = () => {
     const id = generateId();
     return (
         <div className={style.section}>
-            <img src={sign} alt="correct sign" height={150} width={150} />
+            <img className={style.image} src={sign} alt="correct sign" />
             <p className={style.text}>
                 Congratulations! Your reservation has been successfully done.
             </p>

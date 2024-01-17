@@ -16,6 +16,8 @@ $secondary-color: #F4CE14;
 
 .image {
     border-radius: 16px;
+    height: 340px;
+    width: 250px;
 }
 
 .heading1 {
@@ -60,4 +62,15 @@ $secondary-color: #F4CE14;
     line-height: normal;
     border: 0;
     border-radius: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+    .image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .button {
+        width: 150px;
+    }
 }

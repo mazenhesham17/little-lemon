@@ -7,11 +7,13 @@
   padding: 20px 10px;
   width: 850px;
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
 }
 
 .image {
   border-radius: 16px;
+  height: 200px;
+  width: 220px;
 }
 
 .heading1 {
@@ -46,9 +48,8 @@
 
 .stack {
   position: relative;
-  height: 400px;
+  height: 320px;
   width: 300px;
-  margin-left: 50px;
 }
 
 .top {
@@ -62,5 +63,12 @@
   border-radius: 16px;
   position: absolute;
   top: 120px;
-  left: 90px;
+  left: 80px;
+}
+
+@media only screen and (max-width: 780px) {
+  .about {
+    display: grid;
+    place-items: center;
+  }
 }/*# sourceMappingURL=about.module.css.map */

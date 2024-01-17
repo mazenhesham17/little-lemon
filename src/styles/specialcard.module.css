@@ -4,9 +4,12 @@
   width: 250px;
   border-radius: 16px;
   text-align: center;
+  margin: 5px;
 }
 
 .image {
+  height: 240px;
+  width: 250px;
   border-radius: 16px 16px 0 0px;
 }
 

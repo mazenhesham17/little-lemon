@@ -14,7 +14,7 @@ const Hero = () => {
                         Chicago
                     </h5>
                     <p className={style.text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada, enim nec hendrerit iaculis, tellus quam porta purus, sit amet bibendum lectus nisi vel dolor. Cras ut tempor neque. Integer fringilla non mi at bibendum. Sed pulvinar fermentum elit a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
                     </p>
                     <Link to={"/reserving"}>
                         <button className={style.button}>
@@ -22,7 +22,10 @@ const Hero = () => {
                         </button>
                     </Link>
                 </div>
-                <img className={style.image} src={resturant} width={300} height={410} alt="special dish from little lemon restaurant" />
+                <img
+                    className={style.image}
+                    src={resturant}
+                    alt="special dish from little lemon restaurant" />
             </div>
         </div>
     );

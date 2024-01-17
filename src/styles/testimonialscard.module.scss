@@ -9,6 +9,16 @@ $primary-color: #495E57;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 5px;
+}
+
+.image {
+    height: 80px;
+    width: 80px;
+}
+
+.star {
+    height: 14px;
 }
 
 .upper {

@@ -20,6 +20,19 @@
 
 .testimonials_section {
   padding: 80px 0px;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+@media only screen and (max-width: 780px) {
+  .testimonials_section {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .testimonials_section {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=testimonials.module.css.map */

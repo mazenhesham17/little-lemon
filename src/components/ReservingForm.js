@@ -64,7 +64,6 @@ const ReservingForm = (props) => {
             className={style.container}
             onSubmit={e => {
                 e.preventDefault();
-                console.log("hell");
                 if (validateForm()) {
                     handleSubmit();
                 }

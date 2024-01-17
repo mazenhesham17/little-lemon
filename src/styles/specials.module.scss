@@ -14,7 +14,7 @@ $secondary-color: #F4CE14;
 .row {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 .heading1 {
@@ -28,8 +28,8 @@ $secondary-color: #F4CE14;
 }
 
 .browse_button {
-    height: 60px;
-    width: 200px;
+    height: 50px;
+    width: 150px;
     background-color: $secondary-color;
     color: $primary-color;
     font-family: Roboto;
@@ -42,6 +42,14 @@ $secondary-color: #F4CE14;
 }
 
 .specials_section {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+@media only screen and (max-width: 780px) {
+    .specials_section {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
 }

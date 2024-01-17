@@ -18,9 +18,22 @@ const Specials = () => {
                     </button>
                 </div>
                 <div className={style.specials_section}>
-                    <SpecialCard name={"Greek salad"} price={"$12.99"} img={salad} />
-                    <SpecialCard name={"Brochette"} price={"$9.99"} img={bruchetta} />
-                    <SpecialCard name={"Lemon salad"} price={"$5.00"} img={dessert} />
+                    <SpecialCard
+                        name={"Greek salad"}
+                        price={"$12.99"}
+                        img={salad}
+                        description={"The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese... "} />
+                    <SpecialCard
+                        name={"Brochette"}
+                        price={"$9.99"}
+                        img={bruchetta}
+                        description={"Our Bruschetta is made from grilled bread that has been smeared with garlic..."}
+                    />
+                    <SpecialCard
+                        name={"Lemon salad"}
+                        price={"$5.00"}
+                        img={dessert}
+                        description={"Donec ac diam magna. Etiam nec interdum odio. Nullam libero elit, porttitor ac enim ut."} />
                 </div>
             </div>
         </div>

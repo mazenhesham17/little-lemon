@@ -15,12 +15,12 @@ const About = () => {
                         Chicago
                     </h5>
                     <p className={style.text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada, enim nec hendrerit iaculis, tellus quam porta purus, sit amet bibendum lectus nisi vel dolor. Cras ut tempor neque. Integer fringilla non mi at bibendum. Sed pulvinar fermentum elit a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada, enim nec hendrerit iaculis, tellus quam porta purus, sit amet bibendum lectus nisi vel dolor. Cras ut tempor neque. Integer fringilla non mi at bibendum. Sed pulvinar fermentum elit a condimentum.
                     </p>
                 </div>
                 <div className={style.stack}>
-                    <img src={top} className={style.top} height={250} width={270} />
-                    <img src={bottom} className={style.bottom} height={250} width={270} />
+                    <img src={bottom} className={`${style.bottom} ${style.image}`} />
+                    <img src={top} className={`${style.top} ${style.image}`} />
                 </div>
 
             </div>
