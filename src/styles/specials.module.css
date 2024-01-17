@@ -44,9 +44,11 @@
   place-items: center;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 768px) {
   .specials_section {
     grid-template-columns: 1fr;
     place-items: center;
   }
-}/*# sourceMappingURL=specials.module.css.map */
+}
+
+/*# sourceMappingURL=specials.module.css.map */

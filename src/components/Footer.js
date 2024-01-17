@@ -5,8 +5,11 @@ const Footer = () => {
     return (
         <div className={style.section} >
             <div className={style.footer}>
-                <img src={logo} alt="little lemon cropped logo" height={200} width={150} />
-                <div>
+                <img
+                    src={logo}
+                    className={style.image}
+                    alt="little lemon cropped logo" />
+                <div className={style.hide}>
                     <h1 className={style.heading1}>Links</h1>
                     <ul className={style.list}>
                         <li className={style.list_item}><a>Home</a></li>

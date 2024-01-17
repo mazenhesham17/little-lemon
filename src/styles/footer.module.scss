@@ -13,6 +13,11 @@ $primary-color: #495E57;
     justify-content: space-around;
 }
 
+.image {
+    height: 200px;
+    width: 150px;
+}
+
 .heading1 {
     color: #FFF;
     font-family: Karla;
@@ -36,4 +41,14 @@ $primary-color: #495E57;
     font-weight: 500;
     line-height: normal;
     margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        display: grid;
+    }
+
+    .hide {
+        display: none;
+    }
 }

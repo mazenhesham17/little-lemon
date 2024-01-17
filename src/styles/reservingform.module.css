@@ -6,7 +6,7 @@
 
 .card {
   background-color: #EDEFEE;
-  width: 340px;
+  width: 330px;
   padding: 15px;
   margin: 10px 0px;
   color: #495E57;
@@ -121,7 +121,7 @@
   color: red;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
     place-items: center;
